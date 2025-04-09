@@ -17393,6 +17393,14 @@ components:
           example: 0
           format: int64
           type: integer
+        ip_addresses:
+          description: The interface IP addresses
+          example:
+          - 1.1.1.1
+          - 1.1.1.2
+          items:
+            type: string
+          type: array
         mac_address:
           description: The interface MAC address
           example: 00:00:00:00:00:00
@@ -25880,9 +25888,9 @@ components:
           type: string
         rate:
           description: 'Sample rate to apply to spans going through this retention
-            filter,
+            filter.
 
-            a value of 1.0 keeps all spans matching the query.'
+            A value of 1.0 keeps all spans matching the query.'
           example: 1.0
           format: double
           type: number
@@ -25947,9 +25955,9 @@ components:
           type: string
         rate:
           description: 'Sample rate to apply to spans going through this retention
-            filter,
+            filter.
 
-            a value of 1.0 keeps all spans matching the query.'
+            A value of 1.0 keeps all spans matching the query.'
           example: 1.0
           format: double
           type: number
@@ -25980,9 +25988,9 @@ components:
           type: string
         rate:
           description: 'Sample rate to apply to spans going through this retention
-            filter,
+            filter.
 
-            a value of 1.0 keeps all spans matching the query.'
+            A value of 1.0 keeps all spans matching the query.'
           example: 1.0
           format: double
           type: number
@@ -26059,9 +26067,9 @@ components:
           type: string
         rate:
           description: 'Sample rate to apply to spans going through this retention
-            filter,
+            filter.
 
-            a value of 1.0 keeps all spans matching the query.'
+            A value of 1.0 keeps all spans matching the query.'
           example: 1.0
           format: double
           type: number

@@ -86424,6 +86424,17 @@
                 "format": "int64",
                 "type": "integer"
               },
+              "ip_addresses": {
+                "description": "The interface IP addresses",
+                "example": [
+                  "1.1.1.1",
+                  "1.1.1.2"
+                ],
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
               "mac_address": {
                 "description": "The interface MAC address",
                 "example": "00:00:00:00:00:00",
@@ -86492,6 +86503,17 @@
                       "example": 0,
                       "format": "int64",
                       "type": "integer"
+                    },
+                    "ip_addresses": {
+                      "description": "The interface IP addresses",
+                      "example": [
+                        "1.1.1.1",
+                        "1.1.1.2"
+                      ],
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
                     },
                     "mac_address": {
                       "description": "The interface MAC address",
@@ -118322,6 +118344,17 @@
             "example": 0,
             "format": "int64",
             "type": "integer"
+          },
+          "ip_addresses": {
+            "description": "The interface IP addresses",
+            "example": [
+              "1.1.1.1",
+              "1.1.1.2"
+            ],
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
           },
           "mac_address": {
             "description": "The interface MAC address",
@@ -167112,7 +167145,7 @@
                 "type": "string"
               },
               "rate": {
-                "description": "Sample rate to apply to spans going through this retention filter,\na value of 1.0 keeps all spans matching the query.",
+                "description": "Sample rate to apply to spans going through this retention filter.\nA value of 1.0 keeps all spans matching the query.",
                 "example": 1,
                 "format": "double",
                 "type": "number"
@@ -167223,7 +167256,7 @@
                 "type": "string"
               },
               "rate": {
-                "description": "Sample rate to apply to spans going through this retention filter,\na value of 1.0 keeps all spans matching the query.",
+                "description": "Sample rate to apply to spans going through this retention filter.\nA value of 1.0 keeps all spans matching the query.",
                 "example": 1,
                 "format": "double",
                 "type": "number"
@@ -167331,7 +167364,7 @@
             "type": "string"
           },
           "rate": {
-            "description": "Sample rate to apply to spans going through this retention filter,\na value of 1.0 keeps all spans matching the query.",
+            "description": "Sample rate to apply to spans going through this retention filter.\nA value of 1.0 keeps all spans matching the query.",
             "example": 1,
             "format": "double",
             "type": "number"
@@ -167426,7 +167459,7 @@
             "type": "string"
           },
           "rate": {
-            "description": "Sample rate to apply to spans going through this retention filter,\na value of 1.0 keeps all spans matching the query.",
+            "description": "Sample rate to apply to spans going through this retention filter.\nA value of 1.0 keeps all spans matching the query.",
             "example": 1,
             "format": "double",
             "type": "number"
@@ -167480,7 +167513,7 @@
             "type": "string"
           },
           "rate": {
-            "description": "Sample rate to apply to spans going through this retention filter,\na value of 1.0 keeps all spans matching the query.",
+            "description": "Sample rate to apply to spans going through this retention filter.\nA value of 1.0 keeps all spans matching the query.",
             "example": 1,
             "format": "double",
             "type": "number"
@@ -167544,7 +167577,7 @@
                 "type": "string"
               },
               "rate": {
-                "description": "Sample rate to apply to spans going through this retention filter,\na value of 1.0 keeps all spans matching the query.",
+                "description": "Sample rate to apply to spans going through this retention filter.\nA value of 1.0 keeps all spans matching the query.",
                 "example": 1,
                 "format": "double",
                 "type": "number"
@@ -167630,7 +167663,7 @@
                     "type": "string"
                   },
                   "rate": {
-                    "description": "Sample rate to apply to spans going through this retention filter,\na value of 1.0 keeps all spans matching the query.",
+                    "description": "Sample rate to apply to spans going through this retention filter.\nA value of 1.0 keeps all spans matching the query.",
                     "example": 1,
                     "format": "double",
                     "type": "number"
@@ -167747,7 +167780,7 @@
                     "type": "string"
                   },
                   "rate": {
-                    "description": "Sample rate to apply to spans going through this retention filter,\na value of 1.0 keeps all spans matching the query.",
+                    "description": "Sample rate to apply to spans going through this retention filter.\nA value of 1.0 keeps all spans matching the query.",
                     "example": 1,
                     "format": "double",
                     "type": "number"
@@ -167864,7 +167897,7 @@
                     "type": "string"
                   },
                   "rate": {
-                    "description": "Sample rate to apply to spans going through this retention filter,\na value of 1.0 keeps all spans matching the query.",
+                    "description": "Sample rate to apply to spans going through this retention filter.\nA value of 1.0 keeps all spans matching the query.",
                     "example": 1,
                     "format": "double",
                     "type": "number"
@@ -167962,7 +167995,7 @@
             "type": "string"
           },
           "rate": {
-            "description": "Sample rate to apply to spans going through this retention filter,\na value of 1.0 keeps all spans matching the query.",
+            "description": "Sample rate to apply to spans going through this retention filter.\nA value of 1.0 keeps all spans matching the query.",
             "example": 1,
             "format": "double",
             "type": "number"
@@ -168030,7 +168063,7 @@
                 "type": "string"
               },
               "rate": {
-                "description": "Sample rate to apply to spans going through this retention filter,\na value of 1.0 keeps all spans matching the query.",
+                "description": "Sample rate to apply to spans going through this retention filter.\nA value of 1.0 keeps all spans matching the query.",
                 "example": 1,
                 "format": "double",
                 "type": "number"
@@ -168126,7 +168159,7 @@
                     "type": "string"
                   },
                   "rate": {
-                    "description": "Sample rate to apply to spans going through this retention filter,\na value of 1.0 keeps all spans matching the query.",
+                    "description": "Sample rate to apply to spans going through this retention filter.\nA value of 1.0 keeps all spans matching the query.",
                     "example": 1,
                     "format": "double",
                     "type": "number"
@@ -168282,7 +168315,7 @@
                       "type": "string"
                     },
                     "rate": {
-                      "description": "Sample rate to apply to spans going through this retention filter,\na value of 1.0 keeps all spans matching the query.",
+                      "description": "Sample rate to apply to spans going through this retention filter.\nA value of 1.0 keeps all spans matching the query.",
                       "example": 1,
                       "format": "double",
                       "type": "number"
@@ -264428,7 +264461,7 @@
                                 "type": "string"
                               },
                               "rate": {
-                                "description": "Sample rate to apply to spans going through this retention filter,\na value of 1.0 keeps all spans matching the query.",
+                                "description": "Sample rate to apply to spans going through this retention filter.\nA value of 1.0 keeps all spans matching the query.",
                                 "example": 1,
                                 "format": "double",
                                 "type": "number"
@@ -264604,7 +264637,7 @@
                             "type": "string"
                           },
                           "rate": {
-                            "description": "Sample rate to apply to spans going through this retention filter,\na value of 1.0 keeps all spans matching the query.",
+                            "description": "Sample rate to apply to spans going through this retention filter.\nA value of 1.0 keeps all spans matching the query.",
                             "example": 1,
                             "format": "double",
                             "type": "number"
@@ -264730,7 +264763,7 @@
                               "type": "string"
                             },
                             "rate": {
-                              "description": "Sample rate to apply to spans going through this retention filter,\na value of 1.0 keeps all spans matching the query.",
+                              "description": "Sample rate to apply to spans going through this retention filter.\nA value of 1.0 keeps all spans matching the query.",
                               "example": 1,
                               "format": "double",
                               "type": "number"
@@ -265297,7 +265330,7 @@
                               "type": "string"
                             },
                             "rate": {
-                              "description": "Sample rate to apply to spans going through this retention filter,\na value of 1.0 keeps all spans matching the query.",
+                              "description": "Sample rate to apply to spans going through this retention filter.\nA value of 1.0 keeps all spans matching the query.",
                               "example": 1,
                               "format": "double",
                               "type": "number"
@@ -265511,7 +265544,7 @@
                             "type": "string"
                           },
                           "rate": {
-                            "description": "Sample rate to apply to spans going through this retention filter,\na value of 1.0 keeps all spans matching the query.",
+                            "description": "Sample rate to apply to spans going through this retention filter.\nA value of 1.0 keeps all spans matching the query.",
                             "example": 1,
                             "format": "double",
                             "type": "number"
@@ -265647,7 +265680,7 @@
                               "type": "string"
                             },
                             "rate": {
-                              "description": "Sample rate to apply to spans going through this retention filter,\na value of 1.0 keeps all spans matching the query.",
+                              "description": "Sample rate to apply to spans going through this retention filter.\nA value of 1.0 keeps all spans matching the query.",
                               "example": 1,
                               "format": "double",
                               "type": "number"
@@ -363376,6 +363409,17 @@
                                 "example": 0,
                                 "format": "int64",
                                 "type": "integer"
+                              },
+                              "ip_addresses": {
+                                "description": "The interface IP addresses",
+                                "example": [
+                                  "1.1.1.1",
+                                  "1.1.1.2"
+                                ],
+                                "items": {
+                                  "type": "string"
+                                },
+                                "type": "array"
                               },
                               "mac_address": {
                                 "description": "The interface MAC address",
