@@ -86629,6 +86629,7 @@
                                       "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                                       "properties": {
                                         "options": {
+                                          "additionalProperties": {},
                                           "description": "Options for the rule action",
                                           "properties": {
                                             "duration": {
@@ -86637,6 +86638,10 @@
                                               "format": "int64",
                                               "minimum": 0,
                                               "type": "integer"
+                                            },
+                                            "userBehaviorName": {
+                                              "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                              "type": "string"
                                             }
                                           },
                                           "type": "object"
@@ -86645,12 +86650,14 @@
                                           "description": "The action type.",
                                           "enum": [
                                             "block_ip",
-                                            "block_user"
+                                            "block_user",
+                                            "user_behavior"
                                           ],
                                           "type": "string",
                                           "x-enum-varnames": [
                                             "BLOCK_IP",
-                                            "BLOCK_USER"
+                                            "BLOCK_USER",
+                                            "USER_BEHAVIOR"
                                           ]
                                         }
                                       },
@@ -87380,6 +87387,7 @@
                                       "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                                       "properties": {
                                         "options": {
+                                          "additionalProperties": {},
                                           "description": "Options for the rule action",
                                           "properties": {
                                             "duration": {
@@ -87388,6 +87396,10 @@
                                               "format": "int64",
                                               "minimum": 0,
                                               "type": "integer"
+                                            },
+                                            "userBehaviorName": {
+                                              "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                              "type": "string"
                                             }
                                           },
                                           "type": "object"
@@ -87396,12 +87408,14 @@
                                           "description": "The action type.",
                                           "enum": [
                                             "block_ip",
-                                            "block_user"
+                                            "block_user",
+                                            "user_behavior"
                                           ],
                                           "type": "string",
                                           "x-enum-varnames": [
                                             "BLOCK_IP",
-                                            "BLOCK_USER"
+                                            "BLOCK_USER",
+                                            "USER_BEHAVIOR"
                                           ]
                                         }
                                       },
@@ -88068,6 +88082,7 @@
                                           "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                                           "properties": {
                                             "options": {
+                                              "additionalProperties": {},
                                               "description": "Options for the rule action",
                                               "properties": {
                                                 "duration": {
@@ -88076,6 +88091,10 @@
                                                   "format": "int64",
                                                   "minimum": 0,
                                                   "type": "integer"
+                                                },
+                                                "userBehaviorName": {
+                                                  "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                                  "type": "string"
                                                 }
                                               },
                                               "type": "object"
@@ -88084,12 +88103,14 @@
                                               "description": "The action type.",
                                               "enum": [
                                                 "block_ip",
-                                                "block_user"
+                                                "block_user",
+                                                "user_behavior"
                                               ],
                                               "type": "string",
                                               "x-enum-varnames": [
                                                 "BLOCK_IP",
-                                                "BLOCK_USER"
+                                                "BLOCK_USER",
+                                                "USER_BEHAVIOR"
                                               ]
                                             }
                                           },
@@ -88819,6 +88840,7 @@
                                           "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                                           "properties": {
                                             "options": {
+                                              "additionalProperties": {},
                                               "description": "Options for the rule action",
                                               "properties": {
                                                 "duration": {
@@ -88827,6 +88849,10 @@
                                                   "format": "int64",
                                                   "minimum": 0,
                                                   "type": "integer"
+                                                },
+                                                "userBehaviorName": {
+                                                  "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                                  "type": "string"
                                                 }
                                               },
                                               "type": "object"
@@ -88835,12 +88861,14 @@
                                               "description": "The action type.",
                                               "enum": [
                                                 "block_ip",
-                                                "block_user"
+                                                "block_user",
+                                                "user_behavior"
                                               ],
                                               "type": "string",
                                               "x-enum-varnames": [
                                                 "BLOCK_IP",
-                                                "BLOCK_USER"
+                                                "BLOCK_USER",
+                                                "USER_BEHAVIOR"
                                               ]
                                             }
                                           },
@@ -92586,6 +92614,7 @@
                                 "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                                 "properties": {
                                   "options": {
+                                    "additionalProperties": {},
                                     "description": "Options for the rule action",
                                     "properties": {
                                       "duration": {
@@ -92594,6 +92623,10 @@
                                         "format": "int64",
                                         "minimum": 0,
                                         "type": "integer"
+                                      },
+                                      "userBehaviorName": {
+                                        "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                        "type": "string"
                                       }
                                     },
                                     "type": "object"
@@ -92602,12 +92635,14 @@
                                     "description": "The action type.",
                                     "enum": [
                                       "block_ip",
-                                      "block_user"
+                                      "block_user",
+                                      "user_behavior"
                                     ],
                                     "type": "string",
                                     "x-enum-varnames": [
                                       "BLOCK_IP",
-                                      "BLOCK_USER"
+                                      "BLOCK_USER",
+                                      "USER_BEHAVIOR"
                                     ]
                                   }
                                 },
@@ -93253,6 +93288,7 @@
                         "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                         "properties": {
                           "options": {
+                            "additionalProperties": {},
                             "description": "Options for the rule action",
                             "properties": {
                               "duration": {
@@ -93261,6 +93297,10 @@
                                 "format": "int64",
                                 "minimum": 0,
                                 "type": "integer"
+                              },
+                              "userBehaviorName": {
+                                "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                "type": "string"
                               }
                             },
                             "type": "object"
@@ -93269,12 +93309,14 @@
                             "description": "The action type.",
                             "enum": [
                               "block_ip",
-                              "block_user"
+                              "block_user",
+                              "user_behavior"
                             ],
                             "type": "string",
                             "x-enum-varnames": [
                               "BLOCK_IP",
-                              "BLOCK_USER"
+                              "BLOCK_USER",
+                              "USER_BEHAVIOR"
                             ]
                           }
                         },
@@ -93903,6 +93945,7 @@
                             "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                             "properties": {
                               "options": {
+                                "additionalProperties": {},
                                 "description": "Options for the rule action",
                                 "properties": {
                                   "duration": {
@@ -93911,6 +93954,10 @@
                                     "format": "int64",
                                     "minimum": 0,
                                     "type": "integer"
+                                  },
+                                  "userBehaviorName": {
+                                    "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                    "type": "string"
                                   }
                                 },
                                 "type": "object"
@@ -93919,12 +93966,14 @@
                                 "description": "The action type.",
                                 "enum": [
                                   "block_ip",
-                                  "block_user"
+                                  "block_user",
+                                  "user_behavior"
                                 ],
                                 "type": "string",
                                 "x-enum-varnames": [
                                   "BLOCK_IP",
-                                  "BLOCK_USER"
+                                  "BLOCK_USER",
+                                  "USER_BEHAVIOR"
                                 ]
                               }
                             },
@@ -118768,6 +118817,7 @@
                     "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                     "properties": {
                       "options": {
+                        "additionalProperties": {},
                         "description": "Options for the rule action",
                         "properties": {
                           "duration": {
@@ -118776,6 +118826,10 @@
                             "format": "int64",
                             "minimum": 0,
                             "type": "integer"
+                          },
+                          "userBehaviorName": {
+                            "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                            "type": "string"
                           }
                         },
                         "type": "object"
@@ -118784,12 +118838,14 @@
                         "description": "The action type.",
                         "enum": [
                           "block_ip",
-                          "block_user"
+                          "block_user",
+                          "user_behavior"
                         ],
                         "type": "string",
                         "x-enum-varnames": [
                           "BLOCK_IP",
-                          "BLOCK_USER"
+                          "BLOCK_USER",
+                          "USER_BEHAVIOR"
                         ]
                       }
                     },
@@ -129059,6 +129115,7 @@
                                   "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                                   "properties": {
                                     "options": {
+                                      "additionalProperties": {},
                                       "description": "Options for the rule action",
                                       "properties": {
                                         "duration": {
@@ -129067,6 +129124,10 @@
                                           "format": "int64",
                                           "minimum": 0,
                                           "type": "integer"
+                                        },
+                                        "userBehaviorName": {
+                                          "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                          "type": "string"
                                         }
                                       },
                                       "type": "object"
@@ -129075,12 +129136,14 @@
                                       "description": "The action type.",
                                       "enum": [
                                         "block_ip",
-                                        "block_user"
+                                        "block_user",
+                                        "user_behavior"
                                       ],
                                       "type": "string",
                                       "x-enum-varnames": [
                                         "BLOCK_IP",
-                                        "BLOCK_USER"
+                                        "BLOCK_USER",
+                                        "USER_BEHAVIOR"
                                       ]
                                     }
                                   },
@@ -170164,6 +170227,7 @@
                                   "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                                   "properties": {
                                     "options": {
+                                      "additionalProperties": {},
                                       "description": "Options for the rule action",
                                       "properties": {
                                         "duration": {
@@ -170172,6 +170236,10 @@
                                           "format": "int64",
                                           "minimum": 0,
                                           "type": "integer"
+                                        },
+                                        "userBehaviorName": {
+                                          "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                          "type": "string"
                                         }
                                       },
                                       "type": "object"
@@ -170180,12 +170248,14 @@
                                       "description": "The action type.",
                                       "enum": [
                                         "block_ip",
-                                        "block_user"
+                                        "block_user",
+                                        "user_behavior"
                                       ],
                                       "type": "string",
                                       "x-enum-varnames": [
                                         "BLOCK_IP",
-                                        "BLOCK_USER"
+                                        "BLOCK_USER",
+                                        "USER_BEHAVIOR"
                                       ]
                                     }
                                   },
@@ -170915,6 +170985,7 @@
                                   "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                                   "properties": {
                                     "options": {
+                                      "additionalProperties": {},
                                       "description": "Options for the rule action",
                                       "properties": {
                                         "duration": {
@@ -170923,6 +170994,10 @@
                                           "format": "int64",
                                           "minimum": 0,
                                           "type": "integer"
+                                        },
+                                        "userBehaviorName": {
+                                          "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                          "type": "string"
                                         }
                                       },
                                       "type": "object"
@@ -170931,12 +171006,14 @@
                                       "description": "The action type.",
                                       "enum": [
                                         "block_ip",
-                                        "block_user"
+                                        "block_user",
+                                        "user_behavior"
                                       ],
                                       "type": "string",
                                       "x-enum-varnames": [
                                         "BLOCK_IP",
-                                        "BLOCK_USER"
+                                        "BLOCK_USER",
+                                        "USER_BEHAVIOR"
                                       ]
                                     }
                                   },
@@ -171604,6 +171681,7 @@
                             "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                             "properties": {
                               "options": {
+                                "additionalProperties": {},
                                 "description": "Options for the rule action",
                                 "properties": {
                                   "duration": {
@@ -171612,6 +171690,10 @@
                                     "format": "int64",
                                     "minimum": 0,
                                     "type": "integer"
+                                  },
+                                  "userBehaviorName": {
+                                    "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                    "type": "string"
                                   }
                                 },
                                 "type": "object"
@@ -171620,12 +171702,14 @@
                                 "description": "The action type.",
                                 "enum": [
                                   "block_ip",
-                                  "block_user"
+                                  "block_user",
+                                  "user_behavior"
                                 ],
                                 "type": "string",
                                 "x-enum-varnames": [
                                   "BLOCK_IP",
-                                  "BLOCK_USER"
+                                  "BLOCK_USER",
+                                  "USER_BEHAVIOR"
                                 ]
                               }
                             },
@@ -172355,6 +172439,7 @@
                             "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                             "properties": {
                               "options": {
+                                "additionalProperties": {},
                                 "description": "Options for the rule action",
                                 "properties": {
                                   "duration": {
@@ -172363,6 +172448,10 @@
                                     "format": "int64",
                                     "minimum": 0,
                                     "type": "integer"
+                                  },
+                                  "userBehaviorName": {
+                                    "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                    "type": "string"
                                   }
                                 },
                                 "type": "object"
@@ -172371,12 +172460,14 @@
                                 "description": "The action type.",
                                 "enum": [
                                   "block_ip",
-                                  "block_user"
+                                  "block_user",
+                                  "user_behavior"
                                 ],
                                 "type": "string",
                                 "x-enum-varnames": [
                                   "BLOCK_IP",
-                                  "BLOCK_USER"
+                                  "BLOCK_USER",
+                                  "USER_BEHAVIOR"
                                 ]
                               }
                             },
@@ -175370,6 +175461,7 @@
                                 "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                                 "properties": {
                                   "options": {
+                                    "additionalProperties": {},
                                     "description": "Options for the rule action",
                                     "properties": {
                                       "duration": {
@@ -175378,6 +175470,10 @@
                                         "format": "int64",
                                         "minimum": 0,
                                         "type": "integer"
+                                      },
+                                      "userBehaviorName": {
+                                        "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                        "type": "string"
                                       }
                                     },
                                     "type": "object"
@@ -175386,12 +175482,14 @@
                                     "description": "The action type.",
                                     "enum": [
                                       "block_ip",
-                                      "block_user"
+                                      "block_user",
+                                      "user_behavior"
                                     ],
                                     "type": "string",
                                     "x-enum-varnames": [
                                       "BLOCK_IP",
-                                      "BLOCK_USER"
+                                      "BLOCK_USER",
+                                      "USER_BEHAVIOR"
                                     ]
                                   }
                                 },
@@ -176061,6 +176159,7 @@
                         "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                         "properties": {
                           "options": {
+                            "additionalProperties": {},
                             "description": "Options for the rule action",
                             "properties": {
                               "duration": {
@@ -176069,6 +176168,10 @@
                                 "format": "int64",
                                 "minimum": 0,
                                 "type": "integer"
+                              },
+                              "userBehaviorName": {
+                                "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                "type": "string"
                               }
                             },
                             "type": "object"
@@ -176077,12 +176180,14 @@
                             "description": "The action type.",
                             "enum": [
                               "block_ip",
-                              "block_user"
+                              "block_user",
+                              "user_behavior"
                             ],
                             "type": "string",
                             "x-enum-varnames": [
                               "BLOCK_IP",
-                              "BLOCK_USER"
+                              "BLOCK_USER",
+                              "USER_BEHAVIOR"
                             ]
                           }
                         },
@@ -176739,6 +176844,7 @@
                             "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                             "properties": {
                               "options": {
+                                "additionalProperties": {},
                                 "description": "Options for the rule action",
                                 "properties": {
                                   "duration": {
@@ -176747,6 +176853,10 @@
                                     "format": "int64",
                                     "minimum": 0,
                                     "type": "integer"
+                                  },
+                                  "userBehaviorName": {
+                                    "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                    "type": "string"
                                   }
                                 },
                                 "type": "object"
@@ -176755,12 +176865,14 @@
                                 "description": "The action type.",
                                 "enum": [
                                   "block_ip",
-                                  "block_user"
+                                  "block_user",
+                                  "user_behavior"
                                 ],
                                 "type": "string",
                                 "x-enum-varnames": [
                                   "BLOCK_IP",
-                                  "BLOCK_USER"
+                                  "BLOCK_USER",
+                                  "USER_BEHAVIOR"
                                 ]
                               }
                             },
@@ -181474,6 +181586,7 @@
                               "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                               "properties": {
                                 "options": {
+                                  "additionalProperties": {},
                                   "description": "Options for the rule action",
                                   "properties": {
                                     "duration": {
@@ -181482,6 +181595,10 @@
                                       "format": "int64",
                                       "minimum": 0,
                                       "type": "integer"
+                                    },
+                                    "userBehaviorName": {
+                                      "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                      "type": "string"
                                     }
                                   },
                                   "type": "object"
@@ -181490,12 +181607,14 @@
                                   "description": "The action type.",
                                   "enum": [
                                     "block_ip",
-                                    "block_user"
+                                    "block_user",
+                                    "user_behavior"
                                   ],
                                   "type": "string",
                                   "x-enum-varnames": [
                                     "BLOCK_IP",
-                                    "BLOCK_USER"
+                                    "BLOCK_USER",
+                                    "USER_BEHAVIOR"
                                   ]
                                 }
                               },
@@ -182225,6 +182344,7 @@
                               "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                               "properties": {
                                 "options": {
+                                  "additionalProperties": {},
                                   "description": "Options for the rule action",
                                   "properties": {
                                     "duration": {
@@ -182233,6 +182353,10 @@
                                       "format": "int64",
                                       "minimum": 0,
                                       "type": "integer"
+                                    },
+                                    "userBehaviorName": {
+                                      "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                      "type": "string"
                                     }
                                   },
                                   "type": "object"
@@ -182241,12 +182365,14 @@
                                   "description": "The action type.",
                                   "enum": [
                                     "block_ip",
-                                    "block_user"
+                                    "block_user",
+                                    "user_behavior"
                                   ],
                                   "type": "string",
                                   "x-enum-varnames": [
                                     "BLOCK_IP",
-                                    "BLOCK_USER"
+                                    "BLOCK_USER",
+                                    "USER_BEHAVIOR"
                                   ]
                                 }
                               },
@@ -182872,6 +182998,7 @@
               "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
               "properties": {
                 "options": {
+                  "additionalProperties": {},
                   "description": "Options for the rule action",
                   "properties": {
                     "duration": {
@@ -182880,6 +183007,10 @@
                       "format": "int64",
                       "minimum": 0,
                       "type": "integer"
+                    },
+                    "userBehaviorName": {
+                      "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                      "type": "string"
                     }
                   },
                   "type": "object"
@@ -182888,12 +183019,14 @@
                   "description": "The action type.",
                   "enum": [
                     "block_ip",
-                    "block_user"
+                    "block_user",
+                    "user_behavior"
                   ],
                   "type": "string",
                   "x-enum-varnames": [
                     "BLOCK_IP",
-                    "BLOCK_USER"
+                    "BLOCK_USER",
+                    "USER_BEHAVIOR"
                   ]
                 }
               },
@@ -182943,6 +183076,7 @@
         "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
         "properties": {
           "options": {
+            "additionalProperties": {},
             "description": "Options for the rule action",
             "properties": {
               "duration": {
@@ -182951,6 +183085,10 @@
                 "format": "int64",
                 "minimum": 0,
                 "type": "integer"
+              },
+              "userBehaviorName": {
+                "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                "type": "string"
               }
             },
             "type": "object"
@@ -182959,18 +183097,21 @@
             "description": "The action type.",
             "enum": [
               "block_ip",
-              "block_user"
+              "block_user",
+              "user_behavior"
             ],
             "type": "string",
             "x-enum-varnames": [
               "BLOCK_IP",
-              "BLOCK_USER"
+              "BLOCK_USER",
+              "USER_BEHAVIOR"
             ]
           }
         },
         "type": "object"
       },
       "SecurityMonitoringRuleCaseActionOptions": {
+        "additionalProperties": {},
         "description": "Options for the rule action",
         "properties": {
           "duration": {
@@ -182979,20 +183120,30 @@
             "format": "int64",
             "minimum": 0,
             "type": "integer"
+          },
+          "userBehaviorName": {
+            "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+            "type": "string"
           }
         },
         "type": "object"
+      },
+      "SecurityMonitoringRuleCaseActionOptionsUserBehaviorName": {
+        "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+        "type": "string"
       },
       "SecurityMonitoringRuleCaseActionType": {
         "description": "The action type.",
         "enum": [
           "block_ip",
-          "block_user"
+          "block_user",
+          "user_behavior"
         ],
         "type": "string",
         "x-enum-varnames": [
           "BLOCK_IP",
-          "BLOCK_USER"
+          "BLOCK_USER",
+          "USER_BEHAVIOR"
         ]
       },
       "SecurityMonitoringRuleCaseCreate": {
@@ -183004,6 +183155,7 @@
               "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
               "properties": {
                 "options": {
+                  "additionalProperties": {},
                   "description": "Options for the rule action",
                   "properties": {
                     "duration": {
@@ -183012,6 +183164,10 @@
                       "format": "int64",
                       "minimum": 0,
                       "type": "integer"
+                    },
+                    "userBehaviorName": {
+                      "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                      "type": "string"
                     }
                   },
                   "type": "object"
@@ -183020,12 +183176,14 @@
                   "description": "The action type.",
                   "enum": [
                     "block_ip",
-                    "block_user"
+                    "block_user",
+                    "user_behavior"
                   ],
                   "type": "string",
                   "x-enum-varnames": [
                     "BLOCK_IP",
-                    "BLOCK_USER"
+                    "BLOCK_USER",
+                    "USER_BEHAVIOR"
                   ]
                 }
               },
@@ -183092,6 +183250,7 @@
                         "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                         "properties": {
                           "options": {
+                            "additionalProperties": {},
                             "description": "Options for the rule action",
                             "properties": {
                               "duration": {
@@ -183100,6 +183259,10 @@
                                 "format": "int64",
                                 "minimum": 0,
                                 "type": "integer"
+                              },
+                              "userBehaviorName": {
+                                "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                "type": "string"
                               }
                             },
                             "type": "object"
@@ -183108,12 +183271,14 @@
                             "description": "The action type.",
                             "enum": [
                               "block_ip",
-                              "block_user"
+                              "block_user",
+                              "user_behavior"
                             ],
                             "type": "string",
                             "x-enum-varnames": [
                               "BLOCK_IP",
-                              "BLOCK_USER"
+                              "BLOCK_USER",
+                              "USER_BEHAVIOR"
                             ]
                           }
                         },
@@ -183778,6 +183943,7 @@
                         "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                         "properties": {
                           "options": {
+                            "additionalProperties": {},
                             "description": "Options for the rule action",
                             "properties": {
                               "duration": {
@@ -183786,6 +183952,10 @@
                                 "format": "int64",
                                 "minimum": 0,
                                 "type": "integer"
+                              },
+                              "userBehaviorName": {
+                                "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                "type": "string"
                               }
                             },
                             "type": "object"
@@ -183794,12 +183964,14 @@
                             "description": "The action type.",
                             "enum": [
                               "block_ip",
-                              "block_user"
+                              "block_user",
+                              "user_behavior"
                             ],
                             "type": "string",
                             "x-enum-varnames": [
                               "BLOCK_IP",
-                              "BLOCK_USER"
+                              "BLOCK_USER",
+                              "USER_BEHAVIOR"
                             ]
                           }
                         },
@@ -184353,6 +184525,7 @@
                         "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                         "properties": {
                           "options": {
+                            "additionalProperties": {},
                             "description": "Options for the rule action",
                             "properties": {
                               "duration": {
@@ -184361,6 +184534,10 @@
                                 "format": "int64",
                                 "minimum": 0,
                                 "type": "integer"
+                              },
+                              "userBehaviorName": {
+                                "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                "type": "string"
                               }
                             },
                             "type": "object"
@@ -184369,12 +184546,14 @@
                             "description": "The action type.",
                             "enum": [
                               "block_ip",
-                              "block_user"
+                              "block_user",
+                              "user_behavior"
                             ],
                             "type": "string",
                             "x-enum-varnames": [
                               "BLOCK_IP",
-                              "BLOCK_USER"
+                              "BLOCK_USER",
+                              "USER_BEHAVIOR"
                             ]
                           }
                         },
@@ -185039,6 +185218,7 @@
                         "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                         "properties": {
                           "options": {
+                            "additionalProperties": {},
                             "description": "Options for the rule action",
                             "properties": {
                               "duration": {
@@ -185047,6 +185227,10 @@
                                 "format": "int64",
                                 "minimum": 0,
                                 "type": "integer"
+                              },
+                              "userBehaviorName": {
+                                "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                "type": "string"
                               }
                             },
                             "type": "object"
@@ -185055,12 +185239,14 @@
                             "description": "The action type.",
                             "enum": [
                               "block_ip",
-                              "block_user"
+                              "block_user",
+                              "user_behavior"
                             ],
                             "type": "string",
                             "x-enum-varnames": [
                               "BLOCK_IP",
-                              "BLOCK_USER"
+                              "BLOCK_USER",
+                              "USER_BEHAVIOR"
                             ]
                           }
                         },
@@ -186685,6 +186871,7 @@
                         "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                         "properties": {
                           "options": {
+                            "additionalProperties": {},
                             "description": "Options for the rule action",
                             "properties": {
                               "duration": {
@@ -186693,6 +186880,10 @@
                                 "format": "int64",
                                 "minimum": 0,
                                 "type": "integer"
+                              },
+                              "userBehaviorName": {
+                                "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                "type": "string"
                               }
                             },
                             "type": "object"
@@ -186701,12 +186892,14 @@
                             "description": "The action type.",
                             "enum": [
                               "block_ip",
-                              "block_user"
+                              "block_user",
+                              "user_behavior"
                             ],
                             "type": "string",
                             "x-enum-varnames": [
                               "BLOCK_IP",
-                              "BLOCK_USER"
+                              "BLOCK_USER",
+                              "USER_BEHAVIOR"
                             ]
                           }
                         },
@@ -187436,6 +187629,7 @@
                         "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                         "properties": {
                           "options": {
+                            "additionalProperties": {},
                             "description": "Options for the rule action",
                             "properties": {
                               "duration": {
@@ -187444,6 +187638,10 @@
                                 "format": "int64",
                                 "minimum": 0,
                                 "type": "integer"
+                              },
+                              "userBehaviorName": {
+                                "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                "type": "string"
                               }
                             },
                             "type": "object"
@@ -187452,12 +187650,14 @@
                             "description": "The action type.",
                             "enum": [
                               "block_ip",
-                              "block_user"
+                              "block_user",
+                              "user_behavior"
                             ],
                             "type": "string",
                             "x-enum-varnames": [
                               "BLOCK_IP",
-                              "BLOCK_USER"
+                              "BLOCK_USER",
+                              "USER_BEHAVIOR"
                             ]
                           }
                         },
@@ -188055,6 +188255,7 @@
                         "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                         "properties": {
                           "options": {
+                            "additionalProperties": {},
                             "description": "Options for the rule action",
                             "properties": {
                               "duration": {
@@ -188063,6 +188264,10 @@
                                 "format": "int64",
                                 "minimum": 0,
                                 "type": "integer"
+                              },
+                              "userBehaviorName": {
+                                "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                "type": "string"
                               }
                             },
                             "type": "object"
@@ -188071,12 +188276,14 @@
                             "description": "The action type.",
                             "enum": [
                               "block_ip",
-                              "block_user"
+                              "block_user",
+                              "user_behavior"
                             ],
                             "type": "string",
                             "x-enum-varnames": [
                               "BLOCK_IP",
-                              "BLOCK_USER"
+                              "BLOCK_USER",
+                              "USER_BEHAVIOR"
                             ]
                           }
                         },
@@ -188745,6 +188952,7 @@
                             "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                             "properties": {
                               "options": {
+                                "additionalProperties": {},
                                 "description": "Options for the rule action",
                                 "properties": {
                                   "duration": {
@@ -188753,6 +188961,10 @@
                                     "format": "int64",
                                     "minimum": 0,
                                     "type": "integer"
+                                  },
+                                  "userBehaviorName": {
+                                    "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                    "type": "string"
                                   }
                                 },
                                 "type": "object"
@@ -188761,12 +188973,14 @@
                                 "description": "The action type.",
                                 "enum": [
                                   "block_ip",
-                                  "block_user"
+                                  "block_user",
+                                  "user_behavior"
                                 ],
                                 "type": "string",
                                 "x-enum-varnames": [
                                   "BLOCK_IP",
-                                  "BLOCK_USER"
+                                  "BLOCK_USER",
+                                  "USER_BEHAVIOR"
                                 ]
                               }
                             },
@@ -189600,6 +189814,7 @@
                     "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                     "properties": {
                       "options": {
+                        "additionalProperties": {},
                         "description": "Options for the rule action",
                         "properties": {
                           "duration": {
@@ -189608,6 +189823,10 @@
                             "format": "int64",
                             "minimum": 0,
                             "type": "integer"
+                          },
+                          "userBehaviorName": {
+                            "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                            "type": "string"
                           }
                         },
                         "type": "object"
@@ -189616,12 +189835,14 @@
                         "description": "The action type.",
                         "enum": [
                           "block_ip",
-                          "block_user"
+                          "block_user",
+                          "user_behavior"
                         ],
                         "type": "string",
                         "x-enum-varnames": [
                           "BLOCK_IP",
-                          "BLOCK_USER"
+                          "BLOCK_USER",
+                          "USER_BEHAVIOR"
                         ]
                       }
                     },
@@ -190361,6 +190582,7 @@
                         "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                         "properties": {
                           "options": {
+                            "additionalProperties": {},
                             "description": "Options for the rule action",
                             "properties": {
                               "duration": {
@@ -190369,6 +190591,10 @@
                                 "format": "int64",
                                 "minimum": 0,
                                 "type": "integer"
+                              },
+                              "userBehaviorName": {
+                                "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                "type": "string"
                               }
                             },
                             "type": "object"
@@ -190377,12 +190603,14 @@
                             "description": "The action type.",
                             "enum": [
                               "block_ip",
-                              "block_user"
+                              "block_user",
+                              "user_behavior"
                             ],
                             "type": "string",
                             "x-enum-varnames": [
                               "BLOCK_IP",
-                              "BLOCK_USER"
+                              "BLOCK_USER",
+                              "USER_BEHAVIOR"
                             ]
                           }
                         },
@@ -191047,6 +191275,7 @@
                         "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                         "properties": {
                           "options": {
+                            "additionalProperties": {},
                             "description": "Options for the rule action",
                             "properties": {
                               "duration": {
@@ -191055,6 +191284,10 @@
                                 "format": "int64",
                                 "minimum": 0,
                                 "type": "integer"
+                              },
+                              "userBehaviorName": {
+                                "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                "type": "string"
                               }
                             },
                             "type": "object"
@@ -191063,12 +191296,14 @@
                             "description": "The action type.",
                             "enum": [
                               "block_ip",
-                              "block_user"
+                              "block_user",
+                              "user_behavior"
                             ],
                             "type": "string",
                             "x-enum-varnames": [
                               "BLOCK_IP",
-                              "BLOCK_USER"
+                              "BLOCK_USER",
+                              "USER_BEHAVIOR"
                             ]
                           }
                         },
@@ -192427,6 +192662,7 @@
                     "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                     "properties": {
                       "options": {
+                        "additionalProperties": {},
                         "description": "Options for the rule action",
                         "properties": {
                           "duration": {
@@ -192435,6 +192671,10 @@
                             "format": "int64",
                             "minimum": 0,
                             "type": "integer"
+                          },
+                          "userBehaviorName": {
+                            "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                            "type": "string"
                           }
                         },
                         "type": "object"
@@ -192443,12 +192683,14 @@
                         "description": "The action type.",
                         "enum": [
                           "block_ip",
-                          "block_user"
+                          "block_user",
+                          "user_behavior"
                         ],
                         "type": "string",
                         "x-enum-varnames": [
                           "BLOCK_IP",
-                          "BLOCK_USER"
+                          "BLOCK_USER",
+                          "USER_BEHAVIOR"
                         ]
                       }
                     },
@@ -192987,6 +193229,7 @@
                     "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                     "properties": {
                       "options": {
+                        "additionalProperties": {},
                         "description": "Options for the rule action",
                         "properties": {
                           "duration": {
@@ -192995,6 +193238,10 @@
                             "format": "int64",
                             "minimum": 0,
                             "type": "integer"
+                          },
+                          "userBehaviorName": {
+                            "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                            "type": "string"
                           }
                         },
                         "type": "object"
@@ -193003,12 +193250,14 @@
                         "description": "The action type.",
                         "enum": [
                           "block_ip",
-                          "block_user"
+                          "block_user",
+                          "user_behavior"
                         ],
                         "type": "string",
                         "x-enum-varnames": [
                           "BLOCK_IP",
-                          "BLOCK_USER"
+                          "BLOCK_USER",
+                          "USER_BEHAVIOR"
                         ]
                       }
                     },
@@ -193610,6 +193859,7 @@
                     "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                     "properties": {
                       "options": {
+                        "additionalProperties": {},
                         "description": "Options for the rule action",
                         "properties": {
                           "duration": {
@@ -193618,6 +193868,10 @@
                             "format": "int64",
                             "minimum": 0,
                             "type": "integer"
+                          },
+                          "userBehaviorName": {
+                            "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                            "type": "string"
                           }
                         },
                         "type": "object"
@@ -193626,12 +193880,14 @@
                         "description": "The action type.",
                         "enum": [
                           "block_ip",
-                          "block_user"
+                          "block_user",
+                          "user_behavior"
                         ],
                         "type": "string",
                         "x-enum-varnames": [
                           "BLOCK_IP",
-                          "BLOCK_USER"
+                          "BLOCK_USER",
+                          "USER_BEHAVIOR"
                         ]
                       }
                     },
@@ -195297,6 +195553,7 @@
                     "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                     "properties": {
                       "options": {
+                        "additionalProperties": {},
                         "description": "Options for the rule action",
                         "properties": {
                           "duration": {
@@ -195305,6 +195562,10 @@
                             "format": "int64",
                             "minimum": 0,
                             "type": "integer"
+                          },
+                          "userBehaviorName": {
+                            "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                            "type": "string"
                           }
                         },
                         "type": "object"
@@ -195313,12 +195574,14 @@
                         "description": "The action type.",
                         "enum": [
                           "block_ip",
-                          "block_user"
+                          "block_user",
+                          "user_behavior"
                         ],
                         "type": "string",
                         "x-enum-varnames": [
                           "BLOCK_IP",
-                          "BLOCK_USER"
+                          "BLOCK_USER",
+                          "USER_BEHAVIOR"
                         ]
                       }
                     },
@@ -195983,6 +196246,7 @@
                     "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                     "properties": {
                       "options": {
+                        "additionalProperties": {},
                         "description": "Options for the rule action",
                         "properties": {
                           "duration": {
@@ -195991,6 +196255,10 @@
                             "format": "int64",
                             "minimum": 0,
                             "type": "integer"
+                          },
+                          "userBehaviorName": {
+                            "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                            "type": "string"
                           }
                         },
                         "type": "object"
@@ -195999,12 +196267,14 @@
                         "description": "The action type.",
                         "enum": [
                           "block_ip",
-                          "block_user"
+                          "block_user",
+                          "user_behavior"
                         ],
                         "type": "string",
                         "x-enum-varnames": [
                           "BLOCK_IP",
-                          "BLOCK_USER"
+                          "BLOCK_USER",
+                          "USER_BEHAVIOR"
                         ]
                       }
                     },
@@ -196764,6 +197034,7 @@
                     "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                     "properties": {
                       "options": {
+                        "additionalProperties": {},
                         "description": "Options for the rule action",
                         "properties": {
                           "duration": {
@@ -196772,6 +197043,10 @@
                             "format": "int64",
                             "minimum": 0,
                             "type": "integer"
+                          },
+                          "userBehaviorName": {
+                            "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                            "type": "string"
                           }
                         },
                         "type": "object"
@@ -196780,12 +197055,14 @@
                         "description": "The action type.",
                         "enum": [
                           "block_ip",
-                          "block_user"
+                          "block_user",
+                          "user_behavior"
                         ],
                         "type": "string",
                         "x-enum-varnames": [
                           "BLOCK_IP",
-                          "BLOCK_USER"
+                          "BLOCK_USER",
+                          "USER_BEHAVIOR"
                         ]
                       }
                     },
@@ -197516,6 +197793,7 @@
                     "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                     "properties": {
                       "options": {
+                        "additionalProperties": {},
                         "description": "Options for the rule action",
                         "properties": {
                           "duration": {
@@ -197524,6 +197802,10 @@
                             "format": "int64",
                             "minimum": 0,
                             "type": "integer"
+                          },
+                          "userBehaviorName": {
+                            "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                            "type": "string"
                           }
                         },
                         "type": "object"
@@ -197532,12 +197814,14 @@
                         "description": "The action type.",
                         "enum": [
                           "block_ip",
-                          "block_user"
+                          "block_user",
+                          "user_behavior"
                         ],
                         "type": "string",
                         "x-enum-varnames": [
                           "BLOCK_IP",
-                          "BLOCK_USER"
+                          "BLOCK_USER",
+                          "USER_BEHAVIOR"
                         ]
                       }
                     },
@@ -409865,6 +410149,7 @@
                                         "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                                         "properties": {
                                           "options": {
+                                            "additionalProperties": {},
                                             "description": "Options for the rule action",
                                             "properties": {
                                               "duration": {
@@ -409873,6 +410158,10 @@
                                                 "format": "int64",
                                                 "minimum": 0,
                                                 "type": "integer"
+                                              },
+                                              "userBehaviorName": {
+                                                "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                                "type": "string"
                                               }
                                             },
                                             "type": "object"
@@ -409881,12 +410170,14 @@
                                             "description": "The action type.",
                                             "enum": [
                                               "block_ip",
-                                              "block_user"
+                                              "block_user",
+                                              "user_behavior"
                                             ],
                                             "type": "string",
                                             "x-enum-varnames": [
                                               "BLOCK_IP",
-                                              "BLOCK_USER"
+                                              "BLOCK_USER",
+                                              "USER_BEHAVIOR"
                                             ]
                                           }
                                         },
@@ -410616,6 +410907,7 @@
                                         "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                                         "properties": {
                                           "options": {
+                                            "additionalProperties": {},
                                             "description": "Options for the rule action",
                                             "properties": {
                                               "duration": {
@@ -410624,6 +410916,10 @@
                                                 "format": "int64",
                                                 "minimum": 0,
                                                 "type": "integer"
+                                              },
+                                              "userBehaviorName": {
+                                                "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                                "type": "string"
                                               }
                                             },
                                             "type": "object"
@@ -410632,12 +410928,14 @@
                                             "description": "The action type.",
                                             "enum": [
                                               "block_ip",
-                                              "block_user"
+                                              "block_user",
+                                              "user_behavior"
                                             ],
                                             "type": "string",
                                             "x-enum-varnames": [
                                               "BLOCK_IP",
-                                              "BLOCK_USER"
+                                              "BLOCK_USER",
+                                              "USER_BEHAVIOR"
                                             ]
                                           }
                                         },
@@ -411339,6 +411637,7 @@
                                 "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                                 "properties": {
                                   "options": {
+                                    "additionalProperties": {},
                                     "description": "Options for the rule action",
                                     "properties": {
                                       "duration": {
@@ -411347,6 +411646,10 @@
                                         "format": "int64",
                                         "minimum": 0,
                                         "type": "integer"
+                                      },
+                                      "userBehaviorName": {
+                                        "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                        "type": "string"
                                       }
                                     },
                                     "type": "object"
@@ -411355,12 +411658,14 @@
                                     "description": "The action type.",
                                     "enum": [
                                       "block_ip",
-                                      "block_user"
+                                      "block_user",
+                                      "user_behavior"
                                     ],
                                     "type": "string",
                                     "x-enum-varnames": [
                                       "BLOCK_IP",
-                                      "BLOCK_USER"
+                                      "BLOCK_USER",
+                                      "USER_BEHAVIOR"
                                     ]
                                   }
                                 },
@@ -412025,6 +412330,7 @@
                                 "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                                 "properties": {
                                   "options": {
+                                    "additionalProperties": {},
                                     "description": "Options for the rule action",
                                     "properties": {
                                       "duration": {
@@ -412033,6 +412339,10 @@
                                         "format": "int64",
                                         "minimum": 0,
                                         "type": "integer"
+                                      },
+                                      "userBehaviorName": {
+                                        "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                        "type": "string"
                                       }
                                     },
                                     "type": "object"
@@ -412041,12 +412351,14 @@
                                     "description": "The action type.",
                                     "enum": [
                                       "block_ip",
-                                      "block_user"
+                                      "block_user",
+                                      "user_behavior"
                                     ],
                                     "type": "string",
                                     "x-enum-varnames": [
                                       "BLOCK_IP",
-                                      "BLOCK_USER"
+                                      "BLOCK_USER",
+                                      "USER_BEHAVIOR"
                                     ]
                                   }
                                 },
@@ -412797,6 +413109,7 @@
                                   "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                                   "properties": {
                                     "options": {
+                                      "additionalProperties": {},
                                       "description": "Options for the rule action",
                                       "properties": {
                                         "duration": {
@@ -412805,6 +413118,10 @@
                                           "format": "int64",
                                           "minimum": 0,
                                           "type": "integer"
+                                        },
+                                        "userBehaviorName": {
+                                          "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                          "type": "string"
                                         }
                                       },
                                       "type": "object"
@@ -412813,12 +413130,14 @@
                                       "description": "The action type.",
                                       "enum": [
                                         "block_ip",
-                                        "block_user"
+                                        "block_user",
+                                        "user_behavior"
                                       ],
                                       "type": "string",
                                       "x-enum-varnames": [
                                         "BLOCK_IP",
-                                        "BLOCK_USER"
+                                        "BLOCK_USER",
+                                        "USER_BEHAVIOR"
                                       ]
                                     }
                                   },
@@ -413548,6 +413867,7 @@
                                   "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                                   "properties": {
                                     "options": {
+                                      "additionalProperties": {},
                                       "description": "Options for the rule action",
                                       "properties": {
                                         "duration": {
@@ -413556,6 +413876,10 @@
                                           "format": "int64",
                                           "minimum": 0,
                                           "type": "integer"
+                                        },
+                                        "userBehaviorName": {
+                                          "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                          "type": "string"
                                         }
                                       },
                                       "type": "object"
@@ -413564,12 +413888,14 @@
                                       "description": "The action type.",
                                       "enum": [
                                         "block_ip",
-                                        "block_user"
+                                        "block_user",
+                                        "user_behavior"
                                       ],
                                       "type": "string",
                                       "x-enum-varnames": [
                                         "BLOCK_IP",
-                                        "BLOCK_USER"
+                                        "BLOCK_USER",
+                                        "USER_BEHAVIOR"
                                       ]
                                     }
                                   },
@@ -414308,6 +414634,7 @@
                                 "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                                 "properties": {
                                   "options": {
+                                    "additionalProperties": {},
                                     "description": "Options for the rule action",
                                     "properties": {
                                       "duration": {
@@ -414316,6 +414643,10 @@
                                         "format": "int64",
                                         "minimum": 0,
                                         "type": "integer"
+                                      },
+                                      "userBehaviorName": {
+                                        "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                        "type": "string"
                                       }
                                     },
                                     "type": "object"
@@ -414324,12 +414655,14 @@
                                     "description": "The action type.",
                                     "enum": [
                                       "block_ip",
-                                      "block_user"
+                                      "block_user",
+                                      "user_behavior"
                                     ],
                                     "type": "string",
                                     "x-enum-varnames": [
                                       "BLOCK_IP",
-                                      "BLOCK_USER"
+                                      "BLOCK_USER",
+                                      "USER_BEHAVIOR"
                                     ]
                                   }
                                 },
@@ -414994,6 +415327,7 @@
                                 "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                                 "properties": {
                                   "options": {
+                                    "additionalProperties": {},
                                     "description": "Options for the rule action",
                                     "properties": {
                                       "duration": {
@@ -415002,6 +415336,10 @@
                                         "format": "int64",
                                         "minimum": 0,
                                         "type": "integer"
+                                      },
+                                      "userBehaviorName": {
+                                        "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                        "type": "string"
                                       }
                                     },
                                     "type": "object"
@@ -415010,12 +415348,14 @@
                                     "description": "The action type.",
                                     "enum": [
                                       "block_ip",
-                                      "block_user"
+                                      "block_user",
+                                      "user_behavior"
                                     ],
                                     "type": "string",
                                     "x-enum-varnames": [
                                       "BLOCK_IP",
-                                      "BLOCK_USER"
+                                      "BLOCK_USER",
+                                      "USER_BEHAVIOR"
                                     ]
                                   }
                                 },
@@ -415760,6 +416100,7 @@
                                     "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                                     "properties": {
                                       "options": {
+                                        "additionalProperties": {},
                                         "description": "Options for the rule action",
                                         "properties": {
                                           "duration": {
@@ -415768,6 +416109,10 @@
                                             "format": "int64",
                                             "minimum": 0,
                                             "type": "integer"
+                                          },
+                                          "userBehaviorName": {
+                                            "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                            "type": "string"
                                           }
                                         },
                                         "type": "object"
@@ -415776,12 +416121,14 @@
                                         "description": "The action type.",
                                         "enum": [
                                           "block_ip",
-                                          "block_user"
+                                          "block_user",
+                                          "user_behavior"
                                         ],
                                         "type": "string",
                                         "x-enum-varnames": [
                                           "BLOCK_IP",
-                                          "BLOCK_USER"
+                                          "BLOCK_USER",
+                                          "USER_BEHAVIOR"
                                         ]
                                       }
                                     },
@@ -416705,6 +417052,7 @@
                                 "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                                 "properties": {
                                   "options": {
+                                    "additionalProperties": {},
                                     "description": "Options for the rule action",
                                     "properties": {
                                       "duration": {
@@ -416713,6 +417061,10 @@
                                         "format": "int64",
                                         "minimum": 0,
                                         "type": "integer"
+                                      },
+                                      "userBehaviorName": {
+                                        "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                        "type": "string"
                                       }
                                     },
                                     "type": "object"
@@ -416721,12 +417073,14 @@
                                     "description": "The action type.",
                                     "enum": [
                                       "block_ip",
-                                      "block_user"
+                                      "block_user",
+                                      "user_behavior"
                                     ],
                                     "type": "string",
                                     "x-enum-varnames": [
                                       "BLOCK_IP",
-                                      "BLOCK_USER"
+                                      "BLOCK_USER",
+                                      "USER_BEHAVIOR"
                                     ]
                                   }
                                 },
@@ -417391,6 +417745,7 @@
                                 "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                                 "properties": {
                                   "options": {
+                                    "additionalProperties": {},
                                     "description": "Options for the rule action",
                                     "properties": {
                                       "duration": {
@@ -417399,6 +417754,10 @@
                                         "format": "int64",
                                         "minimum": 0,
                                         "type": "integer"
+                                      },
+                                      "userBehaviorName": {
+                                        "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                        "type": "string"
                                       }
                                     },
                                     "type": "object"
@@ -417407,12 +417766,14 @@
                                     "description": "The action type.",
                                     "enum": [
                                       "block_ip",
-                                      "block_user"
+                                      "block_user",
+                                      "user_behavior"
                                     ],
                                     "type": "string",
                                     "x-enum-varnames": [
                                       "BLOCK_IP",
-                                      "BLOCK_USER"
+                                      "BLOCK_USER",
+                                      "USER_BEHAVIOR"
                                     ]
                                   }
                                 },
@@ -418424,6 +418785,7 @@
                                   "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                                   "properties": {
                                     "options": {
+                                      "additionalProperties": {},
                                       "description": "Options for the rule action",
                                       "properties": {
                                         "duration": {
@@ -418432,6 +418794,10 @@
                                           "format": "int64",
                                           "minimum": 0,
                                           "type": "integer"
+                                        },
+                                        "userBehaviorName": {
+                                          "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                          "type": "string"
                                         }
                                       },
                                       "type": "object"
@@ -418440,12 +418806,14 @@
                                       "description": "The action type.",
                                       "enum": [
                                         "block_ip",
-                                        "block_user"
+                                        "block_user",
+                                        "user_behavior"
                                       ],
                                       "type": "string",
                                       "x-enum-varnames": [
                                         "BLOCK_IP",
-                                        "BLOCK_USER"
+                                        "BLOCK_USER",
+                                        "USER_BEHAVIOR"
                                       ]
                                     }
                                   },
@@ -419175,6 +419543,7 @@
                                   "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                                   "properties": {
                                     "options": {
+                                      "additionalProperties": {},
                                       "description": "Options for the rule action",
                                       "properties": {
                                         "duration": {
@@ -419183,6 +419552,10 @@
                                           "format": "int64",
                                           "minimum": 0,
                                           "type": "integer"
+                                        },
+                                        "userBehaviorName": {
+                                          "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                          "type": "string"
                                         }
                                       },
                                       "type": "object"
@@ -419191,12 +419564,14 @@
                                       "description": "The action type.",
                                       "enum": [
                                         "block_ip",
-                                        "block_user"
+                                        "block_user",
+                                        "user_behavior"
                                       ],
                                       "type": "string",
                                       "x-enum-varnames": [
                                         "BLOCK_IP",
-                                        "BLOCK_USER"
+                                        "BLOCK_USER",
+                                        "USER_BEHAVIOR"
                                       ]
                                     }
                                   },
@@ -419875,6 +420250,7 @@
                             "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                             "properties": {
                               "options": {
+                                "additionalProperties": {},
                                 "description": "Options for the rule action",
                                 "properties": {
                                   "duration": {
@@ -419883,6 +420259,10 @@
                                     "format": "int64",
                                     "minimum": 0,
                                     "type": "integer"
+                                  },
+                                  "userBehaviorName": {
+                                    "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                    "type": "string"
                                   }
                                 },
                                 "type": "object"
@@ -419891,12 +420271,14 @@
                                 "description": "The action type.",
                                 "enum": [
                                   "block_ip",
-                                  "block_user"
+                                  "block_user",
+                                  "user_behavior"
                                 ],
                                 "type": "string",
                                 "x-enum-varnames": [
                                   "BLOCK_IP",
-                                  "BLOCK_USER"
+                                  "BLOCK_USER",
+                                  "USER_BEHAVIOR"
                                 ]
                               }
                             },
@@ -420643,6 +421025,7 @@
                                   "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                                   "properties": {
                                     "options": {
+                                      "additionalProperties": {},
                                       "description": "Options for the rule action",
                                       "properties": {
                                         "duration": {
@@ -420651,6 +421034,10 @@
                                           "format": "int64",
                                           "minimum": 0,
                                           "type": "integer"
+                                        },
+                                        "userBehaviorName": {
+                                          "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                          "type": "string"
                                         }
                                       },
                                       "type": "object"
@@ -420659,12 +421046,14 @@
                                       "description": "The action type.",
                                       "enum": [
                                         "block_ip",
-                                        "block_user"
+                                        "block_user",
+                                        "user_behavior"
                                       ],
                                       "type": "string",
                                       "x-enum-varnames": [
                                         "BLOCK_IP",
-                                        "BLOCK_USER"
+                                        "BLOCK_USER",
+                                        "USER_BEHAVIOR"
                                       ]
                                     }
                                   },
@@ -421394,6 +421783,7 @@
                                   "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                                   "properties": {
                                     "options": {
+                                      "additionalProperties": {},
                                       "description": "Options for the rule action",
                                       "properties": {
                                         "duration": {
@@ -421402,6 +421792,10 @@
                                           "format": "int64",
                                           "minimum": 0,
                                           "type": "integer"
+                                        },
+                                        "userBehaviorName": {
+                                          "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                          "type": "string"
                                         }
                                       },
                                       "type": "object"
@@ -421410,12 +421804,14 @@
                                       "description": "The action type.",
                                       "enum": [
                                         "block_ip",
-                                        "block_user"
+                                        "block_user",
+                                        "user_behavior"
                                       ],
                                       "type": "string",
                                       "x-enum-varnames": [
                                         "BLOCK_IP",
-                                        "BLOCK_USER"
+                                        "BLOCK_USER",
+                                        "USER_BEHAVIOR"
                                       ]
                                     }
                                   },
@@ -422361,6 +422757,7 @@
                                     "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                                     "properties": {
                                       "options": {
+                                        "additionalProperties": {},
                                         "description": "Options for the rule action",
                                         "properties": {
                                           "duration": {
@@ -422369,6 +422766,10 @@
                                             "format": "int64",
                                             "minimum": 0,
                                             "type": "integer"
+                                          },
+                                          "userBehaviorName": {
+                                            "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                            "type": "string"
                                           }
                                         },
                                         "type": "object"
@@ -422377,12 +422778,14 @@
                                         "description": "The action type.",
                                         "enum": [
                                           "block_ip",
-                                          "block_user"
+                                          "block_user",
+                                          "user_behavior"
                                         ],
                                         "type": "string",
                                         "x-enum-varnames": [
                                           "BLOCK_IP",
-                                          "BLOCK_USER"
+                                          "BLOCK_USER",
+                                          "USER_BEHAVIOR"
                                         ]
                                       }
                                     },
@@ -423394,6 +423797,7 @@
                                                     "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                                                     "properties": {
                                                       "options": {
+                                                        "additionalProperties": {},
                                                         "description": "Options for the rule action",
                                                         "properties": {
                                                           "duration": {
@@ -423402,6 +423806,10 @@
                                                             "format": "int64",
                                                             "minimum": 0,
                                                             "type": "integer"
+                                                          },
+                                                          "userBehaviorName": {
+                                                            "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                                            "type": "string"
                                                           }
                                                         },
                                                         "type": "object"
@@ -423410,12 +423818,14 @@
                                                         "description": "The action type.",
                                                         "enum": [
                                                           "block_ip",
-                                                          "block_user"
+                                                          "block_user",
+                                                          "user_behavior"
                                                         ],
                                                         "type": "string",
                                                         "x-enum-varnames": [
                                                           "BLOCK_IP",
-                                                          "BLOCK_USER"
+                                                          "BLOCK_USER",
+                                                          "USER_BEHAVIOR"
                                                         ]
                                                       }
                                                     },
@@ -424145,6 +424555,7 @@
                                                     "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                                                     "properties": {
                                                       "options": {
+                                                        "additionalProperties": {},
                                                         "description": "Options for the rule action",
                                                         "properties": {
                                                           "duration": {
@@ -424153,6 +424564,10 @@
                                                             "format": "int64",
                                                             "minimum": 0,
                                                             "type": "integer"
+                                                          },
+                                                          "userBehaviorName": {
+                                                            "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                                            "type": "string"
                                                           }
                                                         },
                                                         "type": "object"
@@ -424161,12 +424576,14 @@
                                                         "description": "The action type.",
                                                         "enum": [
                                                           "block_ip",
-                                                          "block_user"
+                                                          "block_user",
+                                                          "user_behavior"
                                                         ],
                                                         "type": "string",
                                                         "x-enum-varnames": [
                                                           "BLOCK_IP",
-                                                          "BLOCK_USER"
+                                                          "BLOCK_USER",
+                                                          "USER_BEHAVIOR"
                                                         ]
                                                       }
                                                     },
@@ -442168,6 +442585,7 @@
                                             "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                                             "properties": {
                                               "options": {
+                                                "additionalProperties": {},
                                                 "description": "Options for the rule action",
                                                 "properties": {
                                                   "duration": {
@@ -442176,6 +442594,10 @@
                                                     "format": "int64",
                                                     "minimum": 0,
                                                     "type": "integer"
+                                                  },
+                                                  "userBehaviorName": {
+                                                    "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                                    "type": "string"
                                                   }
                                                 },
                                                 "type": "object"
@@ -442184,12 +442606,14 @@
                                                 "description": "The action type.",
                                                 "enum": [
                                                   "block_ip",
-                                                  "block_user"
+                                                  "block_user",
+                                                  "user_behavior"
                                                 ],
                                                 "type": "string",
                                                 "x-enum-varnames": [
                                                   "BLOCK_IP",
-                                                  "BLOCK_USER"
+                                                  "BLOCK_USER",
+                                                  "USER_BEHAVIOR"
                                                 ]
                                               }
                                             },
@@ -443009,6 +443433,7 @@
                                         "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                                         "properties": {
                                           "options": {
+                                            "additionalProperties": {},
                                             "description": "Options for the rule action",
                                             "properties": {
                                               "duration": {
@@ -443017,6 +443442,10 @@
                                                 "format": "int64",
                                                 "minimum": 0,
                                                 "type": "integer"
+                                              },
+                                              "userBehaviorName": {
+                                                "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                                "type": "string"
                                               }
                                             },
                                             "type": "object"
@@ -443025,12 +443454,14 @@
                                             "description": "The action type.",
                                             "enum": [
                                               "block_ip",
-                                              "block_user"
+                                              "block_user",
+                                              "user_behavior"
                                             ],
                                             "type": "string",
                                             "x-enum-varnames": [
                                               "BLOCK_IP",
-                                              "BLOCK_USER"
+                                              "BLOCK_USER",
+                                              "USER_BEHAVIOR"
                                             ]
                                           }
                                         },
@@ -444366,6 +444797,7 @@
                                           "description": "Action to perform when a signal is triggered. Only available for Application Security rule type.",
                                           "properties": {
                                             "options": {
+                                              "additionalProperties": {},
                                               "description": "Options for the rule action",
                                               "properties": {
                                                 "duration": {
@@ -444374,6 +444806,10 @@
                                                   "format": "int64",
                                                   "minimum": 0,
                                                   "type": "integer"
+                                                },
+                                                "userBehaviorName": {
+                                                  "description": "Used with the case action of type 'user_behavior'. The value specified in this field will be applied as a risk tag to all users affected by the rule.",
+                                                  "type": "string"
                                                 }
                                               },
                                               "type": "object"
@@ -444382,12 +444818,14 @@
                                               "description": "The action type.",
                                               "enum": [
                                                 "block_ip",
-                                                "block_user"
+                                                "block_user",
+                                                "user_behavior"
                                               ],
                                               "type": "string",
                                               "x-enum-varnames": [
                                                 "BLOCK_IP",
-                                                "BLOCK_USER"
+                                                "BLOCK_USER",
+                                                "USER_BEHAVIOR"
                                               ]
                                             }
                                           },
