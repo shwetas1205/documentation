@@ -108,6 +108,17 @@ ignore_autodiscovery_tags: true
 
 # Rest of the config here
 ```
+You can override the global Agent-level tag cardinality for a specific check using the check_tag_cardinality configuration option. This allows you to control the level of tag granularity used for that particular check, regardless of the global setting.
+
+For example, in a check configuration:
+```yaml
+init_config:
+
+check_tag_cardinality: low
+
+# Rest of the config here
+```
+When specified, this option takes precedence over the tag_cardinality setting defined in the Agent configuration.
 
 ### Validation
 
